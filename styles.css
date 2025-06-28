@@ -1,0 +1,418 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Amazon Ember',Arial, Helvetica, sans-serif;
+}
+.Header {
+    width: 100%;
+    height: 60px;
+    background-color:rgb(27, 24, 37);
+    color:white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 12px;
+}
+/* Logo CSS */
+.nav_logo {
+    height: 50px;
+    width: 112px;
+    border-radius: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo {
+    background-image: url('Amazon Logo Final.png'); 
+    width: 98px;
+    height: 30px;
+    background-size:cover;
+    background-repeat: no-repeat;}
+
+.border:hover{
+    border: 1px solid white;
+    border-radius: 2px;
+}
+/* Address Box CSS */
+.nav_address{
+    /* Main Container*/
+    height:50px;
+    width:auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+.iconDiv{
+    height: 26px;
+    width: 12px;
+    padding-top: 10px;
+}
+.icon{
+    /* Location Icon */
+    height: 17px;
+    width: 12px;
+    background-image: url('photoaidcom-invert.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.deliverWToLocation{
+    /* Div Where Icon And Location is written */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+.deliverW{
+    /* "Deliver To" is written Here */
+    color:#CCCCCC;
+    font-family: 'Amazon Ember',Arial, Helvetica, sans-serif;
+    height:auto;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 550;
+    
+}
+.location{
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+}
+/* Search Bar CSS */
+.nav_search{
+    /* Main Container */
+    height:100%;
+    width:auto;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+
+}
+.select_bar{
+    display: block;
+    height:40px;
+    width:75px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px;
+    border:none;
+    text-align: center;
+    color:#767676;
+    font-size: 0.75rem;
+   
+}
+.select_bar:hover{
+    color:black;
+    font-weight:700;
+    border: 2px solid rgb(253, 184, 81) ;
+
+}
+option:hover{
+    font-weight: 700;
+}
+.searchArea{
+    display: block;
+    height:40px;
+    width: 700px;
+    padding-left: 10px;
+    border: none;
+    border-left: 1px rgb(207, 203, 203) solid;
+    font-size: 0.89rem;
+}
+.searchArea:focus-visible{
+    border: 2px solid #ff9900;
+    outline: none;
+    box-shadow: 0 0 5px #ff9900;
+    /* background-color: #fffbe6; */
+}
+.searchIconDiv{
+    background-color:rgb(253, 184, 81);
+    display: flex;
+    height:40px;
+    width:40px;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:5px;
+
+}
+.searchIcon{
+    background-color:rgb(253, 184, 81);
+    background-image: url('search.png');
+    background-size: cover;
+    height:20px;
+    width:20px;
+    
+}
+/* sign in and account list box */
+.sign{
+    height:88%;
+    width:auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+}
+#signInBar{
+    font-size: 0.75rem;
+    display: inline-block;
+    height: 28%;
+    /* position: relative;
+    top:1px; */
+
+}
+#accountBar{
+    height:28%;
+    font-size: 1rem;
+    font-weight: 700;
+    display: inline-block;
+}
+/* Order Box css */
+.order{
+    height:88%;
+    width:auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#returnBar{
+    font-size: 0.75rem;
+    display: inline-block;
+    display: flex;
+    align-items: flex-end;
+}
+#orderBar{
+    font-size: 1rem;
+    font-weight: 700;
+    display: inline-block;
+    align-items: flex-start;
+}
+/* Cart Box CSS */
+.cart{
+    height:88%;
+    width:auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: flex-end;
+}
+.cartxIcon{
+height: 100%;
+width:auto
+
+}
+#noItems{
+    text-align: center;
+    color:#ff9900;
+    position: relative;
+    top:15px
+
+
+}
+.cartIcon{
+    background-image: url('cart.png');
+    height:88%;
+    width: 38px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+/* Content Panel */
+.contentPanel{
+    max-height: fit-content;
+    width: 100%;
+    
+}
+.heroImage{
+    width: 100%px;
+    height: 350px;
+    background-image: url('heroImage.jpg');
+    background-size: cover;
+    
+}
+/* control Panel */
+    /* Triple Line  */
+.controlPanel{
+    background-color: #232f3e;
+    color: #CCCCCC;
+    width:100%;
+    height:40px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right:10px;
+}
+.iconBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10%;
+    width:4%;
+    height:88%;
+    border:none;
+}
+.iconz{
+    height:57%;
+    width:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.iconb{
+    height:2.3px;
+    width:17px;
+    background-color: white;
+
+}
+#all{
+    font-size: 0.88rem;
+    color:rgb(255, 255, 255);
+    font-weight: 700;
+}
+/* Unordered List*/
+
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width:35.3%;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: white;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+
+}
+ul{list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+
+}
+/* content Box */
+.content{
+    width:100%;
+    height:1800px;
+    background-color: #d681fe2e;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: self-start;
+    gap:1.5%;
+    position: relative;
+    z-index: 1;
+    box-shadow: #232f3e 1px 1px 1px;
+
+}
+    .contentBox{
+        width:23%;
+        height:22.5%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        /* position: absolute; */
+        
+    }
+        .contentImage{
+            width:88%;
+            height:70%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .contentBox a{
+            text-decoration: none;
+            color:#2162A1;
+            font-size: small;
+        }
+        .contentBox h3{
+            text-decoration: underline black;
+        }
+
+footer{
+    height:520px;
+    width:100%;
+
+}
+    .box1{
+        width:100%;
+        height:10%;
+        background-color:#364960;
+    }
+    .box2{
+        width:100%;
+        height:90%;
+        background-color: #232f3e;
+         
+        
+        }
+
+    .box1 a{
+        color:aliceblue;
+        text-decoration: none;
+
+    }
+    .box2 a{
+        color:aliceblue;
+        text-decoration: none;
+    }
+
+    .box2 ul{
+        display: inline-block;
+        width:auto;
+        height: auto;
+        color:#CCCCCC;
+        font-size: 0.85rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:8px;
+        
+
+    }
+    .top{
+        color:white;
+        font-size: 1.1rem;
+        margin-bottom:3px;
+        font-weight: 700;
+    }
+    
+    .listt{
+        height:70%;
+        width:100%;
+        display: flex;
+        justify-content: center;
+        gap:7%;
+        align-items: flex-start;
+        padding-top: 3%;
+        border-bottom: white 0.05px solid;
+
+    }
+    .copyRight{
+        display: inline-block;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:30%;
+        width:auto;
+        color: #CCCCCC;
+        
+        
+
+    }
+
